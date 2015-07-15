@@ -1,9 +1,15 @@
 footer {
 	background: #F3C48C;
 	color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
 	height: 40px;
 	font-size: 12px;
 

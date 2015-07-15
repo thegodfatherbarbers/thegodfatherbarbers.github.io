@@ -7,8 +7,12 @@
 
     .profile-holder {
         display: flex;
+        display: -webkit-flex;
+        display: -ms-flex;
 
         @include mobile {
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
             flex-direction: column;
         }
 

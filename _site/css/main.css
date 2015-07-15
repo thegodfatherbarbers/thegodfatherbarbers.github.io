@@ -252,10 +252,20 @@ p:last-of-type {
   margin: auto; }
 
 header {
-  background: url(../img/hero-banner-1.jpg) center center fixed no-repeat;
+  background-image: linear-gradient(rgba(59, 59, 59, 0.74), rgba(59, 59, 59, 0.74)), url(../img/final.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   height: 100vh;
   background-size: Cover;
+  display: -webkit-flex;
+  display: -ms-flex;
   display: flex;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-align-items: center;
+  -webkit-align-items: center;
   align-items: center; }
   header .wrapper {
     z-index: 2; }
@@ -265,8 +275,12 @@ header {
     left: 0;
     right: 0;
     text-align: center;
+    display: -webkit-flex;
+    display: -ms-flex;
     display: flex;
     width: 100%;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
     justify-content: center;
     text-transform: uppercase;
     font-size: 0.750em;
@@ -288,9 +302,13 @@ header {
   .crew h2 {
     text-align: center; }
   .crew .profile-holder {
-    display: flex; }
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex; }
     @media (max-width: 768px) {
       .crew .profile-holder {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
         flex-direction: column; } }
     @media (max-width: 768px) {
       .crew .profile-holder > div {
@@ -345,18 +363,32 @@ header {
   color: white;
   line-height: 32px; }
   .final .wrapper {
+    display: -webkit-flex;
+    display: -ms-flex;
     display: flex;
-    align-items: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
     justify-content: center;
+    -ms-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
     height: 100%; }
     .final .wrapper article {
+      -webkit-flex: 2;
+      -ms-flex: 2;
       flex: 2; }
       .final .wrapper article h2 {
         text-align: left; }
     .final .wrapper aside {
+      -webkit-flex: 1;
+      -ms-flex: 1;
       flex: 1;
       margin-left: auto;
+      display: -webkit-flex;
+      display: -ms-flex;
       display: flex;
+      -webkit-justify-content: flex-end;
+      -ms-justify-content: flex-end;
       justify-content: flex-end; }
       .final .wrapper aside li {
         display: inline-block;
@@ -373,8 +405,14 @@ header {
 footer {
   background: #F3C48C;
   color: white;
+  display: -webkit-flex;
+  display: -ms-flex;
   display: flex;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
+  -ms-align-items: center;
+  -webkit-align-items: center;
   align-items: center;
   height: 40px;
   font-size: 12px; }
