@@ -19,8 +19,7 @@
         > div {
 
             @include mobile {
-                width: 80%;
-                max-width: 368px;
+                max-width: 444px;
                 margin: 20px auto;
 
                 &:nth-child(2) {

@@ -256,6 +256,12 @@ p:last-of-type {
   padding-top: 75%;
   display: block;
   margin: auto; }
+  @media (max-width: 768px) {
+    .circle, .crew .Danny,
+    .crew .Rod,
+    .crew .Alex {
+      width: 65%;
+      padding-top: 65%; } }
 
 header {
   background-image: linear-gradient(rgba(59, 59, 59, 0.74), rgba(59, 59, 59, 0.74)), url(../img/final.jpg);
@@ -318,8 +324,7 @@ header {
         flex-direction: column; } }
     @media (max-width: 768px) {
       .crew .profile-holder > div {
-        width: 80%;
-        max-width: 368px;
+        max-width: 444px;
         margin: 20px auto; }
         .crew .profile-holder > div:nth-child(2) {
           -webkit-order: -1;

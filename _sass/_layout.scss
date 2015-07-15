@@ -68,4 +68,9 @@ p:last-of-type {
     padding-top: 75%;
     display: block;
     margin: auto;
+
+    @include mobile {
+        width: 65%;
+        padding-top: 65%;
+    }
 }
