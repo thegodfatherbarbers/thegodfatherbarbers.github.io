@@ -207,6 +207,9 @@ body {
 .wrapper {
   max-width: 960px;
   margin: auto; }
+  @media (max-width: 1024px) {
+    .wrapper {
+      max-width: 90%; } }
 
 section {
   padding: 116px 0; }
@@ -236,6 +239,9 @@ h1 {
     display: block;
     font-size: 0.711em;
     line-height: .8; }
+    @media (max-width: 768px) {
+      h1 b {
+        line-height: 1; } }
 
 p:last-of-type {
   margin: 0; }
@@ -316,6 +322,8 @@ header {
         max-width: 368px;
         margin: 20px auto; }
         .crew .profile-holder > div:nth-child(2) {
+          -webkit-order: -1;
+          -ms-order: -1;
           order: -1; } }
   .crew .Danny + h2,
   .crew .Rod + h2,
@@ -338,6 +346,9 @@ header {
     margin: 0; }
   .crew p {
     padding: 0px 24px; }
+    @media (max-width: 768px) {
+      .crew p {
+        padding: 0; } }
 
 .pricing b {
   font-weight: normal;
@@ -373,10 +384,21 @@ header {
     -webkit-align-items: center;
     align-items: center;
     height: 100%; }
+    @media (max-width: 768px) {
+      .final .wrapper {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
     .final .wrapper article {
       -webkit-flex: 2;
       -ms-flex: 2;
       flex: 2; }
+      @media (max-width: 768px) {
+        .final .wrapper article {
+          -webkit-flex: none;
+          -ms-flex: none;
+          flex: none;
+          margin-bottom: 20px; } }
       .final .wrapper article h2 {
         text-align: left; }
     .final .wrapper aside {
@@ -390,6 +412,9 @@ header {
       -webkit-justify-content: flex-end;
       -ms-justify-content: flex-end;
       justify-content: flex-end; }
+      @media (max-width: 768px) {
+        .final .wrapper aside {
+          margin-left: 0; } }
       .final .wrapper aside li {
         display: inline-block;
         width: 40px;

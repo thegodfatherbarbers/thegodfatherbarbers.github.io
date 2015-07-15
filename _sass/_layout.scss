@@ -7,6 +7,10 @@ body {
 .wrapper {
     max-width: 960px;
     margin: auto;
+
+    @include tablet {
+        max-width: 90%;
+    }
 }
 
 section {
@@ -43,6 +47,10 @@ h1 {
         display: block;
         font-size: 0.711em;
         line-height: .8;
+
+        @include mobile {
+            line-height: 1;
+        }
     }
 }
 
