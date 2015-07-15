@@ -1,0 +1,65 @@
+.crew {
+    background: $light-gray;
+
+    h2 {
+        text-align: center;
+    }
+
+    .profile-holder {
+        display: flex;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        > div {
+
+            @include mobile {
+                width: 80%;
+                max-width: 368px;
+                margin: 20px auto;
+
+                &:nth-child(2) {
+                    order: -1;
+                }
+            }
+        }
+    }
+
+    .Danny,
+    .Rod,
+    .Alex {
+        @extend .circle;
+
+        + h2 {
+            padding: 20px 0 0;
+        }
+    }
+    
+    .Danny {
+        background: url(../img/Danny.png) no-repeat -1% 19%;
+        background-size: cover;
+    }
+    
+    .Rod {
+        background: url(../img/Rod.png) no-repeat 0 0;
+        background-size: cover;
+    }
+
+    .Alex {
+        background: url(../img/Alex.png) no-repeat 0 7%;
+        background-size: cover;
+    }
+
+    .nickname {
+        text-align: center;
+        color: lighten($dark-gray, 20%);
+        font-style: italic;
+        padding: 4px 0 20px;
+        margin: 0;
+    }
+
+    p {
+        padding: 0px 24px;
+    }
+}

@@ -1,0 +1,42 @@
+header {
+    background: url(../img/hero-banner-1.jpg) center center fixed no-repeat;
+    height: 100vh;
+    background-size: Cover;
+    display: flex;
+    align-items: center;
+
+    .wrapper {
+        z-index: 2;
+    }
+
+    ul {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        display: flex;
+        width: 100%;
+        justify-content: center;  
+        text-transform: uppercase;
+        font-size: 0.750em;
+        padding: 1em;
+    }
+
+    li {
+        float: left;
+        display: inline;
+
+        &:not(:last-child) {
+            margin-right: 2em;
+        }
+    }
+
+    a,
+    a:visited,
+    a:hover,
+    a:focus {
+        color: $brand-colour;
+        cursor: pointer;
+    }
+}

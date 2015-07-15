@@ -1,0 +1,50 @@
+.final {
+	// background: url(../img/final.jpg) center center fixed no-repeat;
+	background-image: linear-gradient(rgba(59, 59, 59, .74), rgba(59, 59, 59, .74)), url(../img/final.jpg);
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: 100vh;
+	background-size: cover;
+	color: white;
+	line-height: 32px;
+
+	.wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+
+		article {
+			flex: 2;
+
+			h2 {
+				text-align: left;
+			}
+		}
+
+		aside {
+			flex: 1;
+			margin-left: auto;
+			display: flex;
+			justify-content: flex-end;
+
+			li {
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+				margin-right: 32px;
+			}
+
+			.instagram {
+				background: url('../img/social-instagram-outline.svg');
+				background-size: 40px 40px;
+			}
+
+			.facebook {
+				background: url('../img/social-facebook.svg');
+				background-size: 40px 40px;
+			}
+		}
+	}
+}

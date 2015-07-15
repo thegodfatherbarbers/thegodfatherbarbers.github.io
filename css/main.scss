@@ -1,0 +1,24 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+@import url(http://fonts.googleapis.com/css?family=Oswald:700);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+		"base/mixins",
+		"bourbon/bourbon",
+		"neat/neat",
+		"base/base",
+        "layout",
+        "organisms/hero",
+        "organisms/crew",
+        "organisms/pricing",
+        "organisms/about",
+        "organisms/final",
+        "organisms/footer"
+;

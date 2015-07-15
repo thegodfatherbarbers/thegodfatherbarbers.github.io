@@ -1,0 +1,25 @@
+footer {
+	background: #F3C48C;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	font-size: 12px;
+
+	a,
+	a:hover,
+	a:active,
+	a:focus {
+		color: white;
+	}
+
+	.love {
+		display: inline-block;
+		width: 14px;
+		height: 14px;
+		margin: 0 4px -2px;
+		background: url('../img/heart.svg');
+		background-size: 14px 14px;
+	}
+}
