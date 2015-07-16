@@ -1,5 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:700);
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/MontserratRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MontserratRegular.woff") format("woff"), url("../fonts/MontserratRegular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold; }
 html {
   box-sizing: border-box; }
 
@@ -264,7 +270,7 @@ p:last-of-type {
       padding-top: 65%; } }
 
 header {
-  background-image: linear-gradient(rgba(59, 59, 59, 0.74), rgba(59, 59, 59, 0.74)), url(../img/final.jpg);
+  background-image: linear-gradient(rgba(59, 59, 59, 0.74), rgba(59, 59, 59, 0.74)), url(../img/hero-banner-1.jpg);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -273,9 +279,6 @@ header {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
   -ms-align-items: center;
   -webkit-align-items: center;
   align-items: center; }
@@ -429,8 +432,9 @@ header {
         background: url("../img/social-instagram-outline.svg");
         background-size: 40px 40px; }
       .final .wrapper aside .facebook {
-        background: url("../img/social-facebook.svg");
-        background-size: 40px 40px; }
+        background: url("../img/social-facebook.svg") no-repeat;
+        background-size: 20px 40px;
+        background-position: center; }
 
 footer {
   background: #F3C48C;

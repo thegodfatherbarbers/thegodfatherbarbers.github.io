@@ -73,8 +73,9 @@
 			}
 
 			.facebook {
-				background: url('../img/social-facebook.svg');
-				background-size: 40px 40px;
+				background: url('../img/social-facebook.svg') no-repeat;
+				background-size: 20px 40px;
+				background-position: center;
 			}
 		}
 	}
