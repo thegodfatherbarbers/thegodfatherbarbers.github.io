@@ -1,41 +1,24 @@
 .final {
-	// background: url(../img/final.jpg) center center fixed no-repeat;
-	background-image: linear-gradient(rgba(59, 59, 59, .74), rgba(59, 59, 59, .74)), url(../img/final.jpg);
-	background-position: center center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	height: 100vh;
-	background-size: cover;
+	@include fullbg('../img/final.jpg');
+	height: calc(100vh - 40px);
 	color: white;
 	line-height: 32px;
 
 	.wrapper {
-		display: -webkit-flex;
-	    display: -ms-flex;
-	    display: flex;
-	    -webkit-justify-content: center;
-	    -ms-justify-content: center;
-	    justify-content: center;
-	    -ms-align-items: center;
-	    -webkit-align-items: center;
-	    align-items: center;
+		@include display(flex);
+	    @include justify-content(center);
+	    @include align-items(center);
 		height: 100%;
 
 		@include mobile {
-			-webkit-flex-direction: column;
-			-ms-flex-direction: column;
-			flex-direction: column;
+			@include flex-direction(column);
 		}
 
 		article {
-			-webkit-flex: 2;
-			-ms-flex: 2;
-			flex: 2;
+			@include flex(2);
 
 			@include mobile {
-				-webkit-flex: none;
-				-ms-flex: none;
-				flex: none;
+				@include flex(none);
 				margin-bottom: 20px;
 			}
 
@@ -45,16 +28,10 @@
 		}
 
 		aside {
-			-webkit-flex: 1;
-			-ms-flex: 1;
-			flex: 1;
+			@include flex(1);
+			@include display(flex);
+		    @include justify-content(flex-end);
 			margin-left: auto;
-			display: -webkit-flex;
-		    display: -ms-flex;
-		    display: flex;
-		    -webkit-justify-content: flex-end;
-		    -ms-justify-content: flex-end;
-			justify-content: flex-end;
 
 			@include mobile {
 				margin-left: 0;

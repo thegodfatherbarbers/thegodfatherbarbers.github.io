@@ -17,60 +17,20 @@ section {
     padding: 116px 0;
 }
 
-// hero
-
-.overlay {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(59, 59, 59, .74);
-    z-index: 1;
-}
-
-.logo {
-    background: url(../img/logo-godfathers.svg);
-    width: 211px;
-    height: 100px;
-    background-size: 211px 100px;
-    display: block;
-    margin: auto;
-}
-
-h1 {
-    color: white;
-    font-size: 5.625em;
-    text-align: center;
-
-    b {
-        display: block;
-        font-size: 0.711em;
-        line-height: .8;
-
-        @include mobile {
-            line-height: 1;
-        }
-    }
-}
-
 // stuff
+
+html {
+	box-sizing: border-box;
+}
+
+* {
+	&,
+	&::after,
+	&::before {
+		box-sizing: inherit;
+	}
+}
 
 p:last-of-type {
     margin: 0;
-}
-
-.circle {
-    position: relative;
-    border-radius: 50%;
-    width: 75%;
-    height: auto;
-    padding-top: 75%;
-    display: block;
-    margin: auto;
-
-    @include mobile {
-        width: 65%;
-        padding-top: 65%;
-    }
 }

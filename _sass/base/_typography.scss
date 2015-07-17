@@ -1,5 +1,8 @@
 body {
-  @include font-feature-settings("kern", "liga", "pnum");
+  -webkit-font-feature-settings: "kern", "liga", "pnum";
+  -moz-font-feature-settings: "kern", "liga", "pnum";
+  -ms-font-feature-settings: "kern", "liga", "pnum";
+  font-feature-settings: "kern", "liga", "pnum";
   -webkit-font-smoothing: antialiased;
   color: $base-font-color;
   font-family: $base-font-family;

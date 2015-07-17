@@ -29,6 +29,13 @@
 /// @require {variable} $prefix-for-opera
 /// @require {variable} $prefix-for-spec
 
+$prefix-for-webkit:    true !global;
+$prefix-for-mozilla:   true !global;
+$prefix-for-microsoft: true !global;
+$prefix-for-opera:     true !global;
+$prefix-for-spec:      true !global;
+
+
 @mixin prefixer($property, $value, $prefixes) {
   @each $prefix in $prefixes {
     @if $prefix == webkit {
@@ -55,12 +62,4 @@
       @warn "Unrecognized prefix: #{$prefix}";
     }
   }
-}
-
-@mixin disable-prefix-for-all() {
-  $prefix-for-webkit:    false !global;
-  $prefix-for-mozilla:   false !global;
-  $prefix-for-microsoft: false !global;
-  $prefix-for-opera:     false !global;
-  $prefix-for-spec:      false !global;
 }

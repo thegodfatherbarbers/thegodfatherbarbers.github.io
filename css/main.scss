@@ -3,16 +3,13 @@
 ---
 @charset "utf-8";
 
-
 @import url(http://fonts.googleapis.com/css?family=Oswald:700);
-// @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 @font-face {
     font-family: 'Montserrat';
     src: url('../fonts/MontserratRegular.eot?#iefix') format('embedded-opentype'), 
         url('../fonts/MontserratRegular.woff') format('woff'), 
         url('../fonts/MontserratRegular.ttf')  format('truetype');
 }
-
 @font-face {
     font-family: 'Montserrat';
     src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
@@ -21,15 +18,12 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-	"base/mixins",
-	"bourbon/bourbon",
-	"neat/neat",
-	"base/base",
-        "layout",
-        "organisms/hero",
-        "organisms/crew",
-        "organisms/pricing",
-        "organisms/about",
-        "organisms/final",
-        "organisms/footer"
+    "base/base",
+    "layout",
+    "organisms/hero",
+    "organisms/about",
+    "organisms/pricing",
+    "organisms/crew",
+    "organisms/final",
+    "organisms/footer"
 ;

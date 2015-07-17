@@ -9,3 +9,12 @@
     @content;
   }
 }
+
+@mixin fullbg($url) {
+	  background-image: linear-gradient(rgba(59, 59, 59, .74), rgba(59, 59, 59, .74)), url($url);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: Cover;
+}

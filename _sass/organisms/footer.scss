@@ -1,15 +1,8 @@
 footer {
 	background: #F3C48C;
-	color: white;
-	display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    -ms-justify-content: center;
-    justify-content: center;
-    -ms-align-items: center;
-    -webkit-align-items: center;
-    align-items: center;
+	@include display(flex);
+    @include justify-content(center);
+    @include align-items(center);
 	height: 40px;
 	font-size: 12px;
 

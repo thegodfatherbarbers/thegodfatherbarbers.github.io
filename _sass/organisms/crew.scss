@@ -6,14 +6,9 @@
     }
 
     .profile-holder {
-        display: flex;
-        display: -webkit-flex;
-        display: -ms-flex;
-
+        @include display(flex);
         @include mobile {
-            -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-            flex-direction: column;
+            @include flex-direction(column);
         }
 
         > div {
@@ -23,9 +18,7 @@
                 margin: 20px auto;
 
                 &:nth-child(2) {
-                    -webkit-order: -1;
-                    -ms-order: -1;
-                    order: -1;
+                    @include order(-1);
                 }
             }
         }
@@ -34,7 +27,17 @@
     .Danny,
     .Rod,
     .Alex {
-        @extend .circle;
+        position: relative;
+        border-radius: 50%;
+        width: 75%;
+        padding-top: 75%;
+        display: block;
+        margin: auto;
+
+        @include mobile {
+            width: 65%;
+            padding-top: 65%;
+        }
 
         + h2 {
             padding: 20px 0 0;
