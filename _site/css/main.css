@@ -22,6 +22,9 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 100%;
   line-height: 2.5; }
+  @media (max-width: 768px) {
+    body {
+      font-size: 90%; } }
 
 h1,
 h2,
@@ -37,13 +40,27 @@ h6 {
   text-align: center;
   text-transform: uppercase;
   color: #F3C48C; }
+  @media (max-width: 768px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: 90%; } }
 
 h2 {
   font-size: 2.250em; }
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 2.025em; } }
 
 p {
   margin: 0 0 1.25em;
   font-size: 0.875em; }
+  @media (max-width: 768px) {
+    p {
+      font-size: 0.7875em; } }
 
 a {
   color: #477dca;
@@ -95,6 +112,7 @@ header {
   background-repeat: no-repeat;
   height: 100vh;
   background-size: Cover;
+  min-height: 420px;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -121,13 +139,17 @@ header {
   header h1 {
     color: white;
     font-size: 5.625em; }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 5.0625em; } }
     header h1 b {
       display: block;
       font-size: 0.711em;
       line-height: .8; }
       @media (max-width: 768px) {
         header h1 b {
-          line-height: 1; } }
+          line-height: 1;
+          font-size: 0.6399em; } }
   header ul {
     position: absolute;
     bottom: 0;
@@ -152,6 +174,9 @@ header {
     text-transform: uppercase;
     font-size: 0.750em;
     padding-bottom: 1em; }
+    @media (max-width: 768px) {
+      header ul {
+        font-size: 0.675em; } }
   header li:not(:last-child) {
     margin-right: 2em; }
   header a,
@@ -167,11 +192,17 @@ header {
   float: right; }
 .pricing li {
   font-size: 0.750em; }
+  @media (max-width: 768px) {
+    .pricing li {
+      font-size: 0.675em; } }
 .pricing h3 {
   color: #40414A;
   text-align: left;
   font-size: 1.125em;
   padding: 0 0 16px 0; }
+  @media (max-width: 768px) {
+    .pricing h3 {
+      font-size: 1.0125em; } }
 .pricing .haircuts {
   padding-bottom: 40px; }
 
@@ -258,6 +289,7 @@ header {
   background-repeat: no-repeat;
   height: 100vh;
   background-size: Cover;
+  min-height: 380px;
   height: calc(100vh - 40px);
   color: white;
   line-height: 32px; }
@@ -307,9 +339,26 @@ header {
       -webkit-flex: 2;
       -moz-flex: 2;
       -ms-flex: 2;
-      flex: 2; }
+      flex: 2;
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex; }
       @media (max-width: 768px) {
         .final .wrapper article {
+          -webkit-box-orient: vertical;
+          -moz-box-orient: vertical;
+          box-orient: vertical;
+          -webkit-box-direction: normal;
+          -moz-box-direction: normal;
+          box-direction: normal;
+          -webkit-flex-direction: column;
+          -moz-flex-direction: column;
+          flex-direction: column;
+          -ms-flex-direction: column;
           -webkit-box-flex: none;
           -moz-box-flex: none;
           box-flex: none;
@@ -317,9 +366,26 @@ header {
           -moz-flex: none;
           -ms-flex: none;
           flex: none;
-          margin-bottom: 20px; } }
+          margin-bottom: 20px;
+          width: 100%; } }
       .final .wrapper article h2 {
-        text-align: left; }
+        text-align: left;
+        padding-bottom: 40px; }
+        @media (max-width: 768px) {
+          .final .wrapper article h2 {
+            padding-bottom: 20px; } }
+      .final .wrapper article div {
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        box-flex: 1;
+        -webkit-flex: 1;
+        -moz-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        margin-bottom: 20px; }
+      .final .wrapper article b {
+        float: right;
+        font-weight: normal; }
     .final .wrapper aside {
       -webkit-box-flex: 1;
       -moz-box-flex: 1;
@@ -347,12 +413,19 @@ header {
       margin-left: auto; }
       @media (max-width: 768px) {
         .final .wrapper aside {
-          margin-left: 0; } }
+          margin-left: 0;
+          -webkit-box-flex: none;
+          -moz-box-flex: none;
+          box-flex: none;
+          -webkit-flex: none;
+          -moz-flex: none;
+          -ms-flex: none;
+          flex: none; } }
       .final .wrapper aside li {
         display: inline-block;
         width: 40px;
         height: 40px;
-        margin-right: 32px; }
+        margin: 0 16px; }
       .final .wrapper aside .instagram {
         background: url("../img/social-instagram-outline.svg");
         background-size: 40px 40px; }
@@ -390,6 +463,9 @@ footer {
   -ms-flex-align: center;
   height: 40px;
   font-size: 12px; }
+  @media (max-width: 768px) {
+    footer {
+      font-size: 10.8px; } }
   footer a,
   footer a:hover,
   footer a:active,

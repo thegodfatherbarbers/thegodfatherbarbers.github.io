@@ -1,5 +1,6 @@
 header {
     @include fullbg('../img/hero-banner-1.jpg');
+    min-height: 420px;
     @include display(flex);
     @include align-items(center);
 
@@ -16,6 +17,10 @@ header {
         color: white;
         font-size: 5.625em;
 
+        @include mobile {
+            font-size: .9 * 5.625em;
+        }
+
         b {
             display: block;
             font-size: 0.711em;
@@ -23,6 +28,7 @@ header {
 
             @include mobile {
                 line-height: 1;
+                font-size: .9 * .711em;
             }
         }
     }
@@ -37,6 +43,10 @@ header {
         text-transform: uppercase;
         font-size: 0.750em;
         padding-bottom: 1em;
+
+        @include mobile {
+            font-size: .9 * .75em;
+        }
     }
 
     li {

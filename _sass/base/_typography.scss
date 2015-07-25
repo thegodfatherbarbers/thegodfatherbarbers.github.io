@@ -8,6 +8,10 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
+
+  @include mobile {
+  	font-size: .9 * $base-font-size;
+  }
 }
 
 h1,
@@ -24,15 +28,27 @@ h6 {
   text-align: center;
   text-transform: uppercase;
   color: $brand-colour;
+
+  @include mobile {
+    font-size: .9 * $base-font-size;
+  }
 }
 
 h2 {
   font-size: 2.250em;
+
+  @include mobile {
+  	font-size: .9 * 2.250em;
+  }
 }
 
 p {
   margin: 0 0 $small-spacing;
   font-size: 0.875em;
+
+  @include mobile {
+  	font-size: .9 * .875em;
+  }
 }
 
 a {

@@ -7,6 +7,10 @@
 
 	li {
 		font-size: 0.750em;
+
+		@include mobile {
+			font-size: .9 * .75em;
+		}
 	}
 
 	h3 {
@@ -14,6 +18,10 @@
 	   text-align: left;
 	   font-size: 1.125em;
 	   padding: 0 0 16px 0;
+
+	   @include mobile {
+			font-size: .9 * 1.125em;
+	   }
 	 
 	}
 
