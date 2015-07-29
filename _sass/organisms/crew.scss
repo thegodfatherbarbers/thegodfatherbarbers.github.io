@@ -12,6 +12,7 @@
         }
 
         > div {
+            @include flex(1);
 
             @include mobile {
                 max-width: 444px;
