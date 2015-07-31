@@ -15,6 +15,10 @@ body {
 
 section {
     padding: 116px 0;
+
+    @include mobile {
+        padding: 40px 0;
+    }
 }
 
 // stuff

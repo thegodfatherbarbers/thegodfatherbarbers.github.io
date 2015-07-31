@@ -3,6 +3,7 @@ header {
     min-height: 420px;
     @include display(flex);
     @include align-items(center);
+    position: relative;
 
     .logo {
         background: url(../img/logo-godfathers.svg);

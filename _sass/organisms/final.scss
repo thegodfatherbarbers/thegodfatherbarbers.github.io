@@ -1,6 +1,6 @@
 .final {
 	@include fullbg('../img/final.jpg');
-	min-height: 380px;
+	min-height: 460px;
 	height: calc(100vh - 40px);
 	color: white;
 	line-height: 32px;
@@ -31,6 +31,7 @@
 
 				@include mobile {
 					padding-bottom: 20px;
+					text-align: center;
 				}
 			}
 
@@ -70,9 +71,7 @@
 
 			.facebook {
 				background: url('../img/social-facebook.svg') no-repeat;
-				background-size: 20px 40px;
-				background-position: center;
-			}
+				background-size: 20px 40px;			}
 		}
 	}
 }

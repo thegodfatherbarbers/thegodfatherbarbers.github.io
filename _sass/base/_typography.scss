@@ -31,6 +31,7 @@ h6 {
 
   @include mobile {
     font-size: .9 * $base-font-size;
+    padding-bottom: 30px;
   }
 }
 

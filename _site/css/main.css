@@ -47,7 +47,8 @@ h6 {
     h4,
     h5,
     h6 {
-      font-size: 90%; } }
+      font-size: 90%;
+      padding-bottom: 30px; } }
 
 h2 {
   font-size: 2.250em; }
@@ -95,6 +96,9 @@ body {
 
 section {
   padding: 116px 0; }
+  @media (max-width: 768px) {
+    section {
+      padding: 40px 0; } }
 
 html {
   box-sizing: border-box; }
@@ -128,7 +132,8 @@ header {
   -ms-align-items: center;
   -o-align-items: center;
   align-items: center;
-  -ms-flex-align: center; }
+  -ms-flex-align: center;
+  position: relative; }
   header .logo {
     background: url(../img/logo-godfathers.svg);
     width: 211px;
@@ -297,7 +302,7 @@ header {
   background-repeat: no-repeat;
   height: 100vh;
   background-size: Cover;
-  min-height: 380px;
+  min-height: 460px;
   height: calc(100vh - 40px);
   color: white;
   line-height: 32px; }
@@ -381,7 +386,8 @@ header {
         padding-bottom: 40px; }
         @media (max-width: 768px) {
           .final .wrapper article h2 {
-            padding-bottom: 20px; } }
+            padding-bottom: 20px;
+            text-align: center; } }
       .final .wrapper article div {
         -webkit-box-flex: 1;
         -moz-box-flex: 1;
@@ -439,8 +445,7 @@ header {
         background-size: 40px 40px; }
       .final .wrapper aside .facebook {
         background: url("../img/social-facebook.svg") no-repeat;
-        background-size: 20px 40px;
-        background-position: center; }
+        background-size: 20px 40px; }
 
 footer {
   background: #F3C48C;
