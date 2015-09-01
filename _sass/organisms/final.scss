@@ -55,13 +55,49 @@
 			@include mobile {
 				margin-left: 0;
 				@include flex(none);
+				width: 100%;
+			}
+
+			ul {
+				@include display(flex);
+				@include justify-content(space-around);
+				width: 90%;
+
+				@include mobile {
+					width: 100%;
+				}
+
+				&.phone-active {
+					@include justify-content(center);
+					li:not(:last-child) {
+						opacity: 0;
+
+						a,
+						.mail {
+							width: 0;
+						}
+					}
+
+					.phone {
+						width: 150px;
+					}
+
+					.phone-number {
+						left: 50px;
+					}
+				}
 			}
 
 			li {
-				display: inline-block;
-				width: 40px;
-				height: 40px;
-				margin: 0 16px;
+				transition: .8s;
+
+				a,
+				.mail {
+					transition: .8s;
+					display: inline-block;
+					width: 40px;
+					height: 40px;
+				}
 			}
 
 			.instagram {
@@ -71,7 +107,28 @@
 
 			.facebook {
 				background: url('../img/social-facebook.svg') no-repeat;
-				background-size: 20px 40px;			}
+				background-size: 20px 40px;
+				background-position: center;
+			}
+
+			.phone {
+				overflow: hidden;
+				cursor: pointer;
+				position: relative;
+
+				svg {
+					transition: .8s;
+				}
+			}
+
+			.phone-number {
+				transition: .8s;
+				position: absolute;
+				width: 100px;
+				top: 6px;
+				left: -200px;
+				color: white;
+			}
 		}
 	}
 }

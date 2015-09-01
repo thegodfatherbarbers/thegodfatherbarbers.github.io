@@ -20,3 +20,9 @@ window.smoothScroll = function(target) {
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
+
+$(document).ready(function () {
+    $('.phone').click(function () {
+        $(this).closest('ul').toggleClass('phone-active');
+    });
+}); 

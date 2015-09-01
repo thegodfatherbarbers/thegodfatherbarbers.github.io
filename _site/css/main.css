@@ -434,18 +434,76 @@ header {
           -webkit-flex: none;
           -moz-flex: none;
           -ms-flex: none;
-          flex: none; } }
+          flex: none;
+          width: 100%; } }
+      .final .wrapper aside ul {
+        display: -webkit-box;
+        display: -moz-box;
+        display: box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: distribute;
+        -moz-box-pack: distribute;
+        box-pack: distribute;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around;
+        -ms-justify-content: space-around;
+        -o-justify-content: space-around;
+        justify-content: space-around;
+        -ms-flex-pack: distribute;
+        width: 90%; }
+        @media (max-width: 768px) {
+          .final .wrapper aside ul {
+            width: 100%; } }
+        .final .wrapper aside ul.phone-active {
+          -webkit-box-pack: center;
+          -moz-box-pack: center;
+          box-pack: center;
+          -webkit-justify-content: center;
+          -moz-justify-content: center;
+          -ms-justify-content: center;
+          -o-justify-content: center;
+          justify-content: center;
+          -ms-flex-pack: center; }
+          .final .wrapper aside ul.phone-active li:not(:last-child) {
+            opacity: 0; }
+            .final .wrapper aside ul.phone-active li:not(:last-child) a,
+            .final .wrapper aside ul.phone-active li:not(:last-child) .mail {
+              width: 0; }
+          .final .wrapper aside ul.phone-active .phone {
+            width: 150px; }
+          .final .wrapper aside ul.phone-active .phone-number {
+            left: 50px; }
       .final .wrapper aside li {
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        margin: 0 16px; }
+        transition: .8s; }
+        .final .wrapper aside li a,
+        .final .wrapper aside li .mail {
+          transition: .8s;
+          display: inline-block;
+          width: 40px;
+          height: 40px; }
       .final .wrapper aside .instagram {
         background: url("../img/social-instagram-outline.svg");
         background-size: 40px 40px; }
       .final .wrapper aside .facebook {
         background: url("../img/social-facebook.svg") no-repeat;
-        background-size: 20px 40px; }
+        background-size: 20px 40px;
+        background-position: center; }
+      .final .wrapper aside .phone {
+        overflow: hidden;
+        cursor: pointer;
+        position: relative; }
+        .final .wrapper aside .phone svg {
+          transition: .8s; }
+      .final .wrapper aside .phone-number {
+        transition: .8s;
+        position: absolute;
+        width: 100px;
+        top: 6px;
+        left: -200px;
+        color: white; }
 
 footer {
   background: #F3C48C;
