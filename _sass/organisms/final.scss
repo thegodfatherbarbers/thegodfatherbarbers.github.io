@@ -68,7 +68,6 @@
 				}
 
 				&.phone-active {
-					@include justify-content(center);
 					li:not(:last-child) {
 						opacity: 0;
 
@@ -79,7 +78,7 @@
 					}
 
 					.phone {
-						width: 150px;
+						width: 200px;
 					}
 
 					.phone-number {

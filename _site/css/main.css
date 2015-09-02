@@ -457,25 +457,15 @@ header {
         @media (max-width: 768px) {
           .final .wrapper aside ul {
             width: 100%; } }
-        .final .wrapper aside ul.phone-active {
-          -webkit-box-pack: center;
-          -moz-box-pack: center;
-          box-pack: center;
-          -webkit-justify-content: center;
-          -moz-justify-content: center;
-          -ms-justify-content: center;
-          -o-justify-content: center;
-          justify-content: center;
-          -ms-flex-pack: center; }
-          .final .wrapper aside ul.phone-active li:not(:last-child) {
-            opacity: 0; }
-            .final .wrapper aside ul.phone-active li:not(:last-child) a,
-            .final .wrapper aside ul.phone-active li:not(:last-child) .mail {
-              width: 0; }
-          .final .wrapper aside ul.phone-active .phone {
-            width: 150px; }
-          .final .wrapper aside ul.phone-active .phone-number {
-            left: 50px; }
+        .final .wrapper aside ul.phone-active li:not(:last-child) {
+          opacity: 0; }
+          .final .wrapper aside ul.phone-active li:not(:last-child) a,
+          .final .wrapper aside ul.phone-active li:not(:last-child) .mail {
+            width: 0; }
+        .final .wrapper aside ul.phone-active .phone {
+          width: 200px; }
+        .final .wrapper aside ul.phone-active .phone-number {
+          left: 50px; }
       .final .wrapper aside li {
         transition: .8s; }
         .final .wrapper aside li a,
