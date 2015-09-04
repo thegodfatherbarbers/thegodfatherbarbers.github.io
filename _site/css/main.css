@@ -24,7 +24,7 @@ body {
   line-height: 2.5; }
   @media (max-width: 768px) {
     body {
-      font-size: 90%; } }
+      font-size: 100%; } }
 
 h1,
 h2,
@@ -47,21 +47,21 @@ h6 {
     h4,
     h5,
     h6 {
-      font-size: 90%;
+      font-size: 100%;
       padding-bottom: 30px; } }
 
 h2 {
   font-size: 2.250em; }
   @media (max-width: 768px) {
     h2 {
-      font-size: 2.025em; } }
+      font-size: 2.250em; } }
 
 p {
   margin: 0 0 1.25em;
   font-size: 0.875em; }
   @media (max-width: 768px) {
     p {
-      font-size: 0.7875em; } }
+      font-size: .875em; } }
 
 a {
   color: #477dca;
@@ -146,7 +146,7 @@ header {
     font-size: 5.625em; }
     @media (max-width: 768px) {
       header h1 {
-        font-size: 5.0625em; } }
+        font-size: 4.5em; } }
     header h1 b {
       display: block;
       font-size: 0.711em;
@@ -154,7 +154,7 @@ header {
       @media (max-width: 768px) {
         header h1 b {
           line-height: 1;
-          font-size: 0.6399em; } }
+          font-size: 0.5688em; } }
   header ul {
     position: absolute;
     bottom: 0;
@@ -181,7 +181,7 @@ header {
     padding-bottom: 1em; }
     @media (max-width: 768px) {
       header ul {
-        font-size: 0.675em; } }
+        font-size: .75em; } }
   header li:not(:last-child) {
     margin-right: 2em; }
   header a,
@@ -199,7 +199,7 @@ header {
   font-size: 0.750em; }
   @media (max-width: 768px) {
     .pricing li {
-      font-size: 0.675em; } }
+      font-size: .75em; } }
 .pricing h3 {
   color: #40414A;
   text-align: left;
@@ -207,7 +207,7 @@ header {
   padding: 0 0 16px 0; }
   @media (max-width: 768px) {
     .pricing h3 {
-      font-size: 1.0125em; } }
+      font-size: 1.125em; } }
 .pricing .haircuts {
   padding-bottom: 40px; }
 
@@ -528,7 +528,7 @@ footer {
   font-size: 12px; }
   @media (max-width: 768px) {
     footer {
-      font-size: 10.8px; } }
+      font-size: 12px; } }
   footer a,
   footer a:hover,
   footer a:active,

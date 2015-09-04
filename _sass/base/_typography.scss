@@ -10,7 +10,7 @@ body {
   line-height: $base-line-height;
 
   @include mobile {
-  	font-size: .9 * $base-font-size;
+  	font-size: $base-font-size;
   }
 }
 
@@ -30,7 +30,7 @@ h6 {
   color: $brand-colour;
 
   @include mobile {
-    font-size: .9 * $base-font-size;
+    font-size: $base-font-size;
     padding-bottom: 30px;
   }
 }
@@ -39,7 +39,7 @@ h2 {
   font-size: 2.250em;
 
   @include mobile {
-  	font-size: .9 * 2.250em;
+  	font-size: 2.250em;
   }
 }
 
@@ -48,7 +48,7 @@ p {
   font-size: 0.875em;
 
   @include mobile {
-  	font-size: .9 * .875em;
+  	font-size: .875em;
   }
 }
 
