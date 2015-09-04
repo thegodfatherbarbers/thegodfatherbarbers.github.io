@@ -459,8 +459,7 @@ header {
             width: 100%; } }
         .final .wrapper aside ul.phone-active li:not(:last-child) {
           opacity: 0; }
-          .final .wrapper aside ul.phone-active li:not(:last-child) a,
-          .final .wrapper aside ul.phone-active li:not(:last-child) .mail {
+          .final .wrapper aside ul.phone-active li:not(:last-child) a {
             width: 0; }
         .final .wrapper aside ul.phone-active .phone {
           width: 200px; }
@@ -468,8 +467,7 @@ header {
           left: 50px; }
       .final .wrapper aside li {
         transition: .8s; }
-        .final .wrapper aside li a,
-        .final .wrapper aside li .mail {
+        .final .wrapper aside li a {
           transition: .8s;
           display: inline-block;
           width: 40px;
@@ -481,6 +479,10 @@ header {
         background: url("../img/social-facebook.svg") no-repeat;
         background-size: 20px 40px;
         background-position: center; }
+      .final .wrapper aside .mail {
+        background: url("../img/mail.svg");
+        background-size: 52px 52px;
+        background-position: -6px -6px; }
       .final .wrapper aside .phone {
         overflow: hidden;
         cursor: pointer;

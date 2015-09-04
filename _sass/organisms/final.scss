@@ -71,8 +71,7 @@
 					li:not(:last-child) {
 						opacity: 0;
 
-						a,
-						.mail {
+						a{
 							width: 0;
 						}
 					}
@@ -90,8 +89,7 @@
 			li {
 				transition: .8s;
 
-				a,
-				.mail {
+				a {
 					transition: .8s;
 					display: inline-block;
 					width: 40px;
@@ -108,6 +106,12 @@
 				background: url('../img/social-facebook.svg') no-repeat;
 				background-size: 20px 40px;
 				background-position: center;
+			}
+
+			.mail {
+				background: url('../img/mail.svg');
+				background-size: 52px 52px;
+				background-position: -6px -6px;
 			}
 
 			.phone {
