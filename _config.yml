@@ -1,12 +1,12 @@
 # Site settings
 title: The Godfather Barbers
-email: rodrigoballaminut@hotmail.com
+email: info@thegodfatherbarbers.co.nz
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://thegodfatherbarbers.github.io/" # the base hostname & protocol for your site
+  The kind of vibe, product and service that we offer here at The Godfather 
+  Barber's is something that we've fine-tuned in just under two years 
+  (est. 2013) and something which, until we set up shop, was missing in 
+  the Wellington region.
+url: "http://thegodfatherbarbers.co.nz/" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
