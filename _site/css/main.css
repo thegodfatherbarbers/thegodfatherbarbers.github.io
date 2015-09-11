@@ -302,7 +302,7 @@ header {
   background-repeat: no-repeat;
   height: 100vh;
   background-size: Cover;
-  min-height: 460px;
+  min-height: 600px;
   height: calc(100vh - 40px);
   color: white;
   line-height: 32px; }
@@ -424,7 +424,9 @@ header {
       -o-justify-content: flex-end;
       justify-content: flex-end;
       -ms-flex-pack: end;
-      margin-left: auto; }
+      margin-left: auto;
+      height: 211px;
+      margin-bottom: 20px; }
       @media (max-width: 768px) {
         .final .wrapper aside {
           margin-left: 0;
@@ -435,64 +437,71 @@ header {
           -moz-flex: none;
           -ms-flex: none;
           flex: none;
-          width: 100%; } }
+          width: 100%;
+          height: 128px; } }
       .final .wrapper aside ul {
-        display: -webkit-box;
-        display: -moz-box;
-        display: box;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: distribute;
-        -moz-box-pack: distribute;
-        box-pack: distribute;
-        -webkit-justify-content: space-around;
-        -moz-justify-content: space-around;
-        -ms-justify-content: space-around;
-        -o-justify-content: space-around;
-        justify-content: space-around;
-        -ms-flex-pack: distribute;
-        width: 90%; }
+        position: relative;
+        width: 90%;
+        height: 128px;
+        -webkit-align-self: flex-end;
+        -moz-align-self: flex-end;
+        align-self: flex-end;
+        -ms-flex-item-align: end; }
         @media (max-width: 768px) {
           .final .wrapper aside ul {
             width: 100%; } }
-        .final .wrapper aside ul.phone-active li:not(:last-child) {
+        .final .wrapper aside ul.phone-active .facebook {
           opacity: 0; }
-          .final .wrapper aside ul.phone-active li:not(:last-child) a {
+          .final .wrapper aside ul.phone-active .facebook a {
             width: 0; }
         .final .wrapper aside ul.phone-active .phone {
-          width: 200px; }
+          width: 72%; }
         .final .wrapper aside ul.phone-active .phone-number {
           left: 50px; }
       .final .wrapper aside li {
-        transition: .8s; }
+        transition: .8s;
+        position: absolute;
+        height: 40px; }
         .final .wrapper aside li a {
           transition: .8s;
           display: inline-block;
           width: 40px;
           height: 40px; }
+      .final .wrapper aside .mail {
+        top: 8px;
+        left: 14%;
+        background: url("../img/mail.svg");
+        background-size: 52px 52px;
+        background-position: -6px bottom;
+        position: absolute; }
       .final .wrapper aside .instagram {
+        top: 8px;
+        right: 14%;
         background: url("../img/social-instagram-outline.svg");
-        background-size: 40px 40px; }
+        background-size: 40px 40px;
+        position: absolute; }
       .final .wrapper aside .facebook {
+        bottom: 8px;
+        left: 14%;
         background: url("../img/social-facebook.svg") no-repeat;
         background-size: 20px 40px;
-        background-position: center; }
+        background-position: center;
+        position: absolute; }
       .final .wrapper aside .mail {
         background: url("../img/mail.svg");
         background-size: 52px 52px;
         background-position: -6px -6px; }
       .final .wrapper aside .phone {
+        bottom: 8px;
+        right: 14%;
         overflow: hidden;
         cursor: pointer;
-        position: relative; }
-        .final .wrapper aside .phone svg {
-          transition: .8s; }
+        position: absolute;
+        width: 40px; }
       .final .wrapper aside .phone-number {
         transition: .8s;
         position: absolute;
-        width: 100px;
+        width: 110px;
         top: 6px;
         left: -200px;
         color: white; }

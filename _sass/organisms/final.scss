@@ -1,6 +1,6 @@
 .final {
 	@include fullbg('../img/final.jpg');
-	min-height: 460px;
+	min-height: 600px;
 	height: calc(100vh - 40px);
 	color: white;
 	line-height: 32px;
@@ -51,33 +51,37 @@
 			@include display(flex);
 		    @include justify-content(flex-end);
 			margin-left: auto;
+			height: 211px;
+			margin-bottom: 20px;
 
 			@include mobile {
 				margin-left: 0;
 				@include flex(none);
 				width: 100%;
+				height: 128px;
 			}
 
 			ul {
-				@include display(flex);
-				@include justify-content(space-around);
+				position: relative;
 				width: 90%;
+				height: 128px;
+				@include align-self(flex-end);
 
 				@include mobile {
 					width: 100%;
 				}
 
 				&.phone-active {
-					li:not(:last-child) {
+					.facebook {
 						opacity: 0;
 
-						a{
+						a {
 							width: 0;
 						}
 					}
 
 					.phone {
-						width: 200px;
+						width: 72%;
 					}
 
 					.phone-number {
@@ -88,6 +92,8 @@
 
 			li {
 				transition: .8s;
+				position: absolute;
+				height: 40px;
 
 				a {
 					transition: .8s;
@@ -97,15 +103,30 @@
 				}
 			}
 
+			.mail {
+				top: 8px;
+				left: 14%;
+				background: url('../img/mail.svg');
+				background-size: 52px 52px;
+				background-position: -6px bottom;
+				position: absolute;
+			}
+
 			.instagram {
+				top: 8px;
+				right: 14%;
 				background: url('../img/social-instagram-outline.svg');
 				background-size: 40px 40px;
+				position: absolute;
 			}
 
 			.facebook {
+				bottom: 8px;
+				left: 14%;
 				background: url('../img/social-facebook.svg') no-repeat;
 				background-size: 20px 40px;
 				background-position: center;
+				position: absolute;
 			}
 
 			.mail {
@@ -115,19 +136,18 @@
 			}
 
 			.phone {
+				bottom: 8px;
+				right: 14%;
 				overflow: hidden;
 				cursor: pointer;
-				position: relative;
-
-				svg {
-					transition: .8s;
-				}
+				position: absolute;
+				width: 40px;
 			}
 
 			.phone-number {
 				transition: .8s;
 				position: absolute;
-				width: 100px;
+				width: 110px;
 				top: 6px;
 				left: -200px;
 				color: white;
