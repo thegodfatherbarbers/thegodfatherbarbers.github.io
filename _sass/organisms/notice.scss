@@ -1,0 +1,41 @@
+.notice {
+	background: #F3C48C;
+	@include display(flex);
+    @include justify-content(center);
+    @include align-items(center);
+	height: 40px;
+	font-size: 12px;
+	line-height: 16px;
+	color: white;
+
+	.warning {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		margin: 0 4px -3px;
+		background: url('../img/warning.svg');
+		background-size: 20px 20px;
+	}
+
+	.bold {
+		font-weight: bold;
+		display: table;
+	}
+}
+
+@media screen and (max-width: 357px) {
+	.notice {
+		line-height: 16px;
+		height: 44px;
+	}
+}
+
+@media screen and (max-width: 310px) {
+	.notice {
+		padding: 0 4px;
+
+		.warning {
+			display: none;
+		}
+	}
+}
