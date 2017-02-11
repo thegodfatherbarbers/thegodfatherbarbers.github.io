@@ -115,7 +115,7 @@ header {
   background-attachment: fixed;
   background-repeat: no-repeat;
   height: 100vh;
-  background-size: Cover;
+  background-size: cover;
   min-height: 420px;
   display: -webkit-box;
   display: -moz-box;
@@ -373,7 +373,7 @@ header {
   background-attachment: fixed;
   background-repeat: no-repeat;
   height: 100vh;
-  background-size: Cover;
+  background-size: cover;
   min-height: 600px;
   height: calc(100vh - 40px);
   color: white;
