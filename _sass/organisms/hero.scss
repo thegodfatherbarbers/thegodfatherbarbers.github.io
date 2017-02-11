@@ -1,5 +1,5 @@
 header {
-    @include fullbg('../img/hero-banner-1.jpg');
+    @include fullbg('../img/hero-banner.jpg');
     min-height: 420px;
     @include display(flex);
     @include align-items(center);

@@ -110,7 +110,7 @@ p:last-of-type {
   margin: 0; }
 
 header {
-  background-image: linear-gradient(rgba(59, 59, 59, 0.74), rgba(59, 59, 59, 0.74)), url("../img/hero-banner-1.jpg");
+  background-image: linear-gradient(rgba(59, 59, 59, 0.74), rgba(59, 59, 59, 0.74)), url("../img/hero-banner.jpg");
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
