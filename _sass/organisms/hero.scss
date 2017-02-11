@@ -5,13 +5,27 @@ header {
     @include align-items(center);
     position: relative;
 
+    &.loaded {
+        @include fullbg('../img/hero-banner-1-high-res.jpg');
+    }
+
+    .site-header-high-res {
+        display: none;
+    }
+
     .logo {
         background: url(../img/logo-godfathers.svg);
-        width: 211px;
-        height: 100px;
-        background-size: 211px 100px;
+        width: 422px;
+        height: 200px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
         display: block;
         margin: auto;
+
+        @include mobile {
+            width: 211px;
+            height: 100px;
+        }
     }
 
     h1 {

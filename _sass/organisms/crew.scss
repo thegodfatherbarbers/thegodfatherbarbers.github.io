@@ -1,12 +1,23 @@
 .crew {
     background: $light-gray;
 
+    .crew-wrapper {
+        @extend .wrapper;
+        max-width: 1300px;
+
+        @include tablet {
+            max-width: 90%;
+        }
+    }
+
     h2 {
         text-align: center;
     }
 
     .profile-holder {
         @include display(flex);
+        flex-wrap: wrap;
+
         @include mobile {
             @include flex-direction(column);
         }
@@ -14,20 +25,26 @@
         > div {
             @include flex(1);
 
-            @include mobile {
-                max-width: 444px;
-                margin: 20px auto;
+            @include tablet {
+                flex-basis: calc(50% - 40px);
+                margin: 0 20px 30px;
 
                 &:nth-child(2) {
                     @include order(-1);
                 }
+            }
+
+            @include mobile {
+                max-width: 444px;
+                margin: 20px auto;
             }
         }
     }
 
     .Danny,
     .Rod,
-    .Alex {
+    .Alex,
+    .Zeir {
         position: relative;
         border-radius: 50%;
         width: 75%;
@@ -44,19 +61,24 @@
             padding: 20px 0 0;
         }
     }
-    
+
     .Danny {
-        background: url(../img/Danny.png) no-repeat -1% 19%;
+        background: url(../img/Danny.jpg) no-repeat center center;
         background-size: cover;
     }
-    
+
     .Rod {
-        background: url(../img/Rod.png) no-repeat 0 0;
+        background: url(../img/Rod.jpg) no-repeat center center;
         background-size: cover;
     }
 
     .Alex {
-        background: url(../img/Alex.png) no-repeat 0 7%;
+        background: url(../img/Alex.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+    .Zeir {
+        background: url(../img/Zeir.jpg) no-repeat center center;
         background-size: cover;
     }
 

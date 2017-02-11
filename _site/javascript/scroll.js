@@ -8,6 +8,15 @@ $(document).ready(function () {
         return false;
     });
 
+    $('.site-header-high-res').on('load', function() {
+        alert('load');
+        $('.site-header').addClass('loaded');
+    }).off().each(function () {
+        if (this.complete) {
+            this.trigger('load');
+        }
+    });
+
     $('.phone').click(function () {
         $(this).closest('ul').toggleClass('phone-active');
     });
