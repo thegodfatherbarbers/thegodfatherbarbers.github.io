@@ -134,6 +134,9 @@ header {
   align-items: center;
   -ms-flex-align: center;
   position: relative; }
+  @media (max-width: 768px) {
+    header {
+      background-attachment: scroll; } }
   header .logo {
     background: url(../img/logo-godfathers.svg);
     width: 422px;
@@ -378,6 +381,9 @@ header {
   height: calc(100vh - 40px);
   color: white;
   line-height: 32px; }
+  @media (max-width: 768px) {
+    .final {
+      background-attachment: scroll; } }
   .final .wrapper, .final .crew .crew-wrapper, .crew .final .crew-wrapper {
     display: -webkit-box;
     display: -moz-box;
